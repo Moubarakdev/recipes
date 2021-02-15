@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meilleurs recettes</title>
+
+    <!-- BOOTSTRAP CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body { 
+          margin:0;
+          padding:0; 
+          background: url(images/bg-img1.jpg) no-repeat center fixed; 
+          -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+          background-size: cover; /* version standardisée */
+        }
+
+        #result{
+          min-height: 100vh;
+        }
+
+
+
+    </style>
+
+
+
+    <!-- CDN FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    
+   
+</head>
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-success" href="index.html" >Recette cuisine </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gatégories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cocktail.html">Cocktails</a>
+                <a class="dropdown-item" href="index.html">Plats</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="index.html">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- FORMULAIRE ET BOUTON DE RECHERCHE DE PLATS -->
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <form class="form-inline my-2 my-lg-0 ml-5">
+              <input class="form-control mr-sm-2 " id="searchInput" type="search" placeholder="Entrer le nom d'un plat" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" id="randomMeal" type="submit">Chercher un plat au hasard</button>
+            </form>        
+          </div>
+        </div>
+    </div>
+     
+    <!-- PARTIE RESULTAT -->
+    <div class="container mt-4 mb-2 h-100" id="resultBox" >
+      <div class="row" id="result">
+
+      </div>
+    </div>
+  
+    <footer class="bg-dark text-white text-center text-lg-start mt-1 container-fluid footer navbar-fixed-bottom">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+    
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+              voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+    
+          
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fab fa-github-square"></i></a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fab fa-facebook-square"></i></a>
+              </li>
+             
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/Moubarakdev">Moubarakdev</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+   
+  <script src="meal.js"></script>
+  
+  <!-- Bootstrap Javascript -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
